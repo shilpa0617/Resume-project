@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}  Home {% endblock title %}
+
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic.jpg' %}" alt="profilePic" class="img-thumbnail" width="150px"
+            height="100px">
+    </div>
+
+    <div class="mt-5 mx-5 justify"> <!-- (text-justify) not working -->
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height: 1.1rem;">
+            <p style="text-indent: 100px;">
+                My name is <b class="font-weight-bold">Shilpa Parmar</b> , and I am a full-stack web developer. I
+                completed my bachelor's degree in computer engineering from Dr. D.Y. Patil Institute of Engineering, Management, and Research. With a strong
+                foundation in computer engineering, I have dedicated myself to the exciting world of web development.
+            </p>
+            <p>
+                Throughout my journey, I have worked on numerous web development projects, where I have honed my skills
+                in creating dynamic and user-friendly websites. From designing intuitive user interfaces to implementing
+                robust back-end functionalities, I strive to deliver high-quality and efficient web solutions.
+            </p>
+            <p>
+                Beyond web development, I am passionate about problem-solving and algorithmic thinking. As a 3-star
+                coder on LeetCode, I have solved over 1000 coding questions, focusing on mastering data structures and
+                algorithms. This has equipped me with a deep understanding of programming concepts and the ability to approach
+                complex problem-solving scenarios.
+                I believe in continuous learning and staying updated with the latest technologies and trends in the web
+                development industry. With my technical expertise and creativity, I am dedicated to crafting innovative
+                and impactful digital experiences.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-4">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+
+</div>
+{% endblock content %}
